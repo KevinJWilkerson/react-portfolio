@@ -4,8 +4,6 @@ import picture from "../../assets/images/kevinW-3374.jpg";
 function About() {
   return (
     <section className="" id="about">
-      <h1 id="about"></h1>
-
       <div className="hero">
         <img src={picture} />
       </div>

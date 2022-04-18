@@ -1,17 +1,13 @@
 import React from "react";
-import Nav from "../Nav";
 
-const Header = () => {
+function Header(props) {
   return (
     <header className="flex-row px-1 nav-container">
       <div className="logo-container">
-        <a href="/">
-          <p>KEVIN WILKERSON</p>
-        </a>
+        <p>KEVIN WILKERSON</p>
       </div>
-      <Nav></Nav>
     </header>
   );
-};
+}
 
 export default Header;

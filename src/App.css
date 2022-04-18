@@ -74,16 +74,33 @@ header nav ul li a:hover {
 
 /* header & nav bar styles end */
 
-/* footer style starts */
+/* footer styles start */
 
 footer {
-  display: block;
-  background-color: black;
+  background-color: var(--secondary-color);
+  font-family: "ryman_ecoregular", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1vw;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 1%;
+  position: absolute;
+  bottom: 0;
+  min-height: 40px;
+  width: 100%;
+}
+
+.footer-content {
+  color: whitesmoke;
+  display: flex;
 }
 
 /* footer style ends */
 
-/* hero section starts */
+/* hero styles start */
 .hero {
   display: block;
   width: 100%;
@@ -96,9 +113,9 @@ footer {
   height: auto;
   max-height: 350px;
 }
-/* hero section ends */
+/* hero styles end */
 
-/* section style starts */
+/* section style start */
 
 section {
   display: flex;
@@ -178,14 +195,6 @@ section {
   margin: 0 15px 0 0;
 }
 /* section style ends */
-
-/* footer section begins */
-
-footer {
-  min-height: 40px;
-}
-
-/* footer section ends */
 
 a {
   z-index: 9999;
