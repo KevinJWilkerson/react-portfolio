@@ -15,8 +15,6 @@ function App() {
     { name: "Contact" },
   ]);
 
-  console.log(pages);
-
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (

@@ -7,10 +7,10 @@ function About() {
       <div className="hero">
         <img src={picture} />
       </div>
-      <div class="section-title">
+      <div className="section-title">
         <h2>About</h2>
       </div>
-      <div class="section-content">
+      <div className="section-content">
         <p>
           Welcome to my portfolio site! I'm an aspiring Full Stack Software
           Developer enrolled in the Coding Boot Camp at UT Austin.
