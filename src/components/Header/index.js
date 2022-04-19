@@ -6,6 +6,7 @@ function Header(props) {
       <div className="logo-container">
         <p>KEVIN WILKERSON</p>
       </div>
+      {props.children}
     </header>
   );
 }

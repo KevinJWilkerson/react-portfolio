@@ -22,6 +22,15 @@ body {
   color: var(--secondary-color);
 }
 
+/* container styles start */
+
+.container {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* container styles end */
+
 /* header & nav bar styles start */
 
 header {
@@ -72,6 +81,78 @@ header nav ul li a:hover {
   text-decoration-color: whitesmoke;
 }
 
+.form-container {
+}
+
+label {
+  font-size: 0.85em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1px solid var(--primary-color);
+}
+
+input[type="submit"] {
+  background: #64b5f6;
+  margin: 0 auto;
+  outline: 0;
+  color: white;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+button {
+  background: var(--tertiary-color);
+  margin: 0 auto;
+  outline: 0;
+  color: white;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+button:hover {
+  background: #a5d6a7;
+  color: whitesmoke;
+}
+
+button:focus {
+  background: var(--secondary-color);
+  color: whitesmoke;
+}
+
+.form-entry {
+  width: auto;
+}
+
+.error-text {
+  margin-bottom: 2.5vw;
+}
+
 /* header & nav bar styles end */
 
 /* footer styles start */
@@ -87,8 +168,9 @@ footer {
   align-content: center;
   justify-content: center;
   padding: 1%;
-  position: absolute;
   bottom: 0;
+  position: fixed;
+
   min-height: 40px;
   width: 100%;
 }
@@ -116,6 +198,10 @@ footer {
 /* hero styles end */
 
 /* section style start */
+
+.page-content {
+  width: 100vw;
+}
 
 section {
   display: flex;

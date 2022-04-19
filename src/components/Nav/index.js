@@ -1,25 +1,26 @@
 import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav({ pages = [], setCurrentPage, currentPage }) {
+function Nav(props) {
+  const { pages = [], setCurrentPage, currentPage } = props;
+
   useEffect(() => {
-    document.title = currentPage.name;
+    document.title = capitalizeFirstLetter(currentPage.name);
   }, [currentPage]);
-
-  console.log(pages);
 
   return (
     <nav>
       <ul className="flex-row">
-        {pages.map((page) => {
-          return (
-            <li
-              className={`mx-2 ${currentPage.name === page.name}`}
-              key={page.name}
-            >
-              <span onClick={() => setCurrentPage(page)}>{page.name}</span>
-            </li>
-          );
-        })}
+        {pages.map((Page) => (
+          <li
+            className={`mx-2 ${currentPage.name === Page.name && "navActive"}`}
+            key={Page.name}
+          >
+            <span onClick={() => setCurrentPage(Page)}>
+              {capitalizeFirstLetter(Page.name)}
+            </span>
+          </li>
+        ))}
       </ul>
     </nav>
   );

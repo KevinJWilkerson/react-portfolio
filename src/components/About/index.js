@@ -3,7 +3,7 @@ import picture from "../../assets/images/kevinW-3374.jpg";
 
 function About() {
   return (
-    <section className="" id="about">
+    <section className="page-content" id="about">
       <div className="hero">
         <img src={picture} />
       </div>
@@ -15,6 +15,7 @@ function About() {
           Welcome to my portfolio site! I'm an aspiring Full Stack Software
           Developer enrolled in the Coding Boot Camp at UT Austin.
         </p>
+        <br />
         <p>
           I've spent the last decade working in advertising at top-tier agencies
           including Wieden+Kennedy, Droga5, and Huge. My work as a strategist
