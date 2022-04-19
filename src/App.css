@@ -81,7 +81,10 @@ header nav ul li a:hover {
   text-decoration-color: whitesmoke;
 }
 
-.form-container {
+.on-hover:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
 }
 
 label {
