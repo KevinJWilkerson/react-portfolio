@@ -4,6 +4,7 @@ import brewHaus from "../../assets/images/project-beer.png";
 import robotGladiators from "../../assets/images/robot-gladiators.jfif";
 import taskMasterPro from "../../assets/images/taskmaster-pro.png";
 import seeVee from "../../assets/images/SeeVee.gif";
+import dedly from "../../assets/images/dedly.png";
 
 function Work() {
   return (
@@ -13,6 +14,21 @@ function Work() {
       </div>
       <div className="work-collection">
         <div className="section-content work-samples work-samples-hero">
+          <a
+            href="https://project-ded.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={dedly} />
+          </a>
+          <div className="work-text">
+            <span>
+              Dedly: A react single page application that gives users a rough
+              sense of how much longer they have left to live.
+            </span>
+          </div>
+        </div>
+        <div className="section-content work-samples">
           <a
             href="https://kevinjwilkerson.github.io/Run-Buddy-Project/"
             target="_blank"
