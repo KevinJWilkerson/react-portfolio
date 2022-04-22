@@ -6,7 +6,6 @@
 
 # Screenshot
 
-[!screenshot](src\assets\images\portfolio-screenshot.png)
 <img src="src\assets\images\portfolio-screenshot.png" alt="Screenshot of the home page">
 
 
